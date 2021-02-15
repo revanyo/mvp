@@ -1,0 +1,42 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "MVP Ryan",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "eslint": "^7.20.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.16",
+    "npm": "^7.5.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "eslint-config-airbnb": "^18.2.1",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revanyo/mvp.git"
+  },
+  "author": "Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revanyo/mvp/issues"
+  },
+  "homepage": "https://github.com/revanyo/mvp#readme"
+}
