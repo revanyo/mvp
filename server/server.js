@@ -73,7 +73,7 @@ app.put('/people/:id', (req, res) =>{
 })
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server listening at localhost:${PORT}!`);
+    console.log(`Server listening!`);
   });
 
 
