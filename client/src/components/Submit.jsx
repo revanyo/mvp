@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import { useState } from "react";
+const PORT = process.env.PORT ||3000
 
 function Submit(props) {
     const [firstName, setFirstName] = useState(null);
@@ -9,7 +10,7 @@ function Submit(props) {
 
     function handleSubmit() {
         console.log('clicked')
-        axios.post('/people', {
+        axios.post('${PORT}/people', {
             name: firstName+ ' ' + lastName,
             entry: entry
         });

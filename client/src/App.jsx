@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   getEntries() {
-    axios.get('/people').then((res) => {
+    axios.get('${PORT}/people').then((res) => {
       this.setState({
         people: res.data,
       });
