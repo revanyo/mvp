@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable no-console */
 import React from 'react';
-const PORT = process.env.PORT ||3000
+
 
 class Home extends React.Component {
   constructor(props) {

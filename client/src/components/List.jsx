@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react';
 import {useState} from 'react';
-const PORT = process.env.PORT ||3000
 
 function List(props) {
     const unique = Array.from(new Set(props.people.map(x=>x.name)))
@@ -18,13 +17,13 @@ function List(props) {
 
     function deleteEntry(value) {
         console.log(value, 'delete')
-        axios.delete('${PORT}/people/' + value
+        axios.delete('/people/' + value
         ).then(props.getEntries())
     }
 
     function likeEntry(value) {
         console.log(value, 'delete')
-        axios.put('${PORT}/people/' + value
+        axios.put('/people/' + value
         ).then(props.getEntries())
     }
 
