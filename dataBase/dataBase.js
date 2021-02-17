@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/entryList', {useNewUrlParser: true, useUnifiedTopology: true });
+const url = 'mongodb+srv://revanyo:382112@cluster0.uuykf.mongodb.net/entryList?retryWrites=true&w=majority'
+
+mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection
 
@@ -16,9 +18,9 @@ let Schema = mongoose.Schema
 
 let PersonSchema = new Schema(
     {
-        name: {type: String, unique: true},
+        name: String,
         entry: String,
-        rating: Number
+        likeCount: Number
     },
     {collection: 'people'},
 )

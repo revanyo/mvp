@@ -46,17 +46,33 @@ app.get('/people/:id', (req, res)=>{
             res.send(data)
         }
     })
-    
+})
+
+app.delete('/people/:id', (req, res)=>{
+    let query = {_id: req.params.id}
+    console.log(req.params)
+    db.Person.findByIdAndDelete(query, (err, data) =>{
+        if(err) {
+            res.status(400)
+        } else {
+            res.status(200)
+            res.send(data)
+        }
+    })
+})
+
+app.put('/people/:id', (req, res) =>{
+    let query = {_id: req.params.id}
+    db.Person.findOneAndUpdate(query, {$inc: {likeCount: 1}}, (err, data)=>{
+        if(err) {
+            res.status(400)
+        } else {
+            res.status(200)
+            res.send(data)
+        }
+    })
 })
 
 app.listen(PORT, () => {
     console.log(`Server listening at localhost:${PORT}!`);
   });
-
-//   .populate('entries').then((err, data)=>{
-//     if(err) {
-//         throw err
-//     } else {
-//         console.log(data)
-//     }
-// })

@@ -1,0 +1,95 @@
+body {
+    background-color: grey;
+}
+
+.main {
+    height: 540px;
+    margin: 0px;
+    width: 110%;
+    background-color: grey;
+    
+}
+
+.fixed-header, .fixed-footer{
+    width: 110%;       
+    background: #333;
+    color: #fff;
+    height: 30px;
+    padding: 10px
+}
+
+.homeSpan, .entrySpan, .formSpan {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px
+}
+
+.entrySpan {
+    float:right;
+    padding-right: 50px
+}
+
+.homeSpan {
+    float: left;
+}
+
+.formSpan {
+    align-content: center;
+    padding-left: 15px;
+}
+
+.homeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    
+}
+
+.formDiv{
+    vertical-align:middle;
+}
+
+.homeButton {
+    padding: 15px 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    background: #333;
+    color: white
+}
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+  }
+
+  .submitButton {
+    background: #333;
+    color: white;
+    border: none
+  }
+
+  .entryDiv{
+      padding: 5px;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      font-weight: 700
+  }
+
+  .close{
+      color: black;
+      margin-left: 5px;
+  }
+
+  .like {
+      color: red;
+      padding-left: 5px;
+  }
