@@ -56,6 +56,7 @@ function List(props) {
         )
     }
 
+    console.log(props.people.likeCount)
     return (
         <div>
             {renderView}
