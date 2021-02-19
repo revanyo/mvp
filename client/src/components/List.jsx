@@ -37,7 +37,6 @@ function List(props) {
         return 0;
       }
 
-    console.log(props.people, 'ListView')
     
     if (view === null) {
         renderView = (
@@ -49,7 +48,7 @@ function List(props) {
         renderView = (
             <div>
               <ul>
-        {props.people.filter(person=>person.name === view).sort((a, b) => (a.likeCount < b.likeCount) ? 1 : -1).map((person)=>(<div className="entryDiv" key={person._id} onClick={()=>setView(null)}>{person.entry}<span className="like" onClick={()=>likeEntry(person._id)}>&#9829;</span><span class="close" onClick={()=>deleteEntry(person._id)}>X</span></div>))}
+        {props.people.filter(person=>person.name === view).sort((a, b) => (a.likeCount < b.likeCount) ? 1 : -1).map((person)=>(<div className="entry" key={person._id} onClick={()=>setView(null)}>{person.entry}<span className="like" onClick={()=>likeEntry(person._id)}>&#9829;</span><span className="close" onClick={()=>deleteEntry(person._id)}>X</span></div>))}
               </ul>
               <button className="homeButton" onClick={()=>setView(null)}>Back to Entries</button>
             </div>
