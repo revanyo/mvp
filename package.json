@@ -4,6 +4,7 @@
   "description": "MVP Ryan",
   "main": "index.js",
   "dependencies": {
+    "@auth0/auth0-react": "^1.4.0",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "mongodb": "^3.6.4",

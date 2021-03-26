@@ -22,7 +22,6 @@ function List(props) {
     }
 
     function likeEntry(value) {
-        console.log(value, 'delete')
         axios.put('/people/' + value
         ).then(props.getEntries())
     }
@@ -56,7 +55,6 @@ function List(props) {
         )
     }
 
-    console.log(props.people.likeCount)
     return (
         <div>
             {renderView}
